@@ -1,0 +1,9 @@
+project: savantenvs/rrdtool-1.x
+target: rrd_open_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/rrd_open_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/rrd_open_fuzzer
+    libfuzzer: true
+    timeout: 10

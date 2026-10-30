@@ -1,0 +1,7 @@
+# Prune generated artifacts from the build context; .git is deliberately kept (the image holds the
+# full history of the mayhem branch).
+/build/
+*.o
+*.lo
+*.a
+*.la
